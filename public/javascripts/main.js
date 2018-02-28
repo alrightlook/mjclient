@@ -12,11 +12,13 @@ var config = {
 function preload()
 {
     this.load.image('bg', 'assets/background.jpg');
+    this.load.audio('bgm', 'assets/background01.mp3');
 }
 
 function create()
 {
     this.add.image(1334 / 2, 750 / 2, 'bg');
+    this.sound.play('bgm');
 }
 
 var game = new Phaser.Game(config);

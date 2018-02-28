@@ -19,6 +19,9 @@ function create()
 {
     this.add.image(1334 / 2, 750 / 2, 'bg');
     this.sound.play('bgm');
+    localStorage.setItem('a', 'b');
+    var text = localStorage.getItem('a');
+    alert(text);
 }
 
 var game = new Phaser.Game(config);
